@@ -12,7 +12,9 @@ function Hero({ movies }) {
             <div className="slider__text">
               <h3>{a.title}</h3>
               <p>{a.overview}</p>
-              <Link className="read__more">Ətraflı</Link>
+              <Link className="read__more" to={`movie/${a.id}`}>
+                Ətraflı
+              </Link>
             </div>
             <div className="slider__image">
               <img

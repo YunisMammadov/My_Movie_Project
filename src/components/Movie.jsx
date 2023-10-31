@@ -15,7 +15,9 @@ function Movie({ movie, setFavorites, favorites }) {
         alt=""
       />
       <h3>{movie.title}</h3>
-      <Link className="read__more">Ətraflı</Link>
+      <Link className="read__more" to={`movie/${movie.id}`}>
+        Ətraflı
+      </Link>
       <button onClick={handleFavorite}>
         {check ? "Remove Favorite" : "Add Favorite"}
       </button>
